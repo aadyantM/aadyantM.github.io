@@ -1,0 +1,81 @@
+body {
+  font-size: 28px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Courier New';
+}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+  font-family: 'Courier New';
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.navbar a:hover {
+  background-color: grey;
+}
+
+div.galleryimg {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 420px;
+}
+
+div.galleryimg:hover {
+  border: 1px solid #777;
+}
+
+div.galleryimg img {
+  width: 420px;
+  height: 290px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  font-family: 'Courier New';
+  text-align: center;
+  color: white;
+}
+
+.about {
+  font-family: 'Courier New';
+  text-align: center;
+  color: white;
+}
+
+.gallery {
+  font-family: 'Courier New';
+  text-align: center;
+  color: white;
+  padding-left: 287px;
+}
+
+.contact {
+  font-family: 'Courier New';
+  text-align: center;
+  color: white;
+}
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css"href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="navbar"id="navbarId">
+  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#aboutSection"><i class="fa fa-fw fa-user"></i> About</a> 
+  <a href="#gallerySection"><i class="fa fa-fw fa-photo"></i> Gallery</a> 
+  <a href="#contactSection"><i class="fa fa-fw fa-envelope-open"></i> Contact</a>
+</div>
+
+<div class="header">
+  <h1> Aadyant Maity</h1>
+  <p>Student, Cricketer, Programmer</p>
+  <img src="aadyant.jpg" alt="aadyantPic" width="10%" height="10%">
+  <br>
+</div>
+
+<div class="about" id="aboutSection">
+  <h1>About Me</h1>
+  <h5>My name is Aadyant Maity. I'm in 9th grade at Eastlake High School. My hobbies are playing cricket, video games, making YouTube videos, and programming.
+     I focus on whatever I work on and try to do my best in everything. I am currently looking to pursue a career in the STEM (Science, Technology, Engineering, and Math) field.</h5>
+  <h3>My Hobbies</h3>
+  <h4>Cricket</h4>
+  <p>A clip of my wicket-keeping</p>
+  <div>
+    <video width="600" height="400" controls>
+        <source src="stumping 1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <p>A clip of my batting</p>
+  <div>
+    <video width="600" height="400" controls>
+        <source src="coverDrive_1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <h4>Programming</h4>
+  <p>Snippet of a game I made using Python and Pygame</p>
+  <div>
+    <img src="pingPong game.jpg" width="600" height="400">
+  </div>
+</div>
+
+<h1>Gallery</h1>
+<div class="gallery" id="gallerySection">
+    <div class="galleryimg">
+      <a target="_blank" href="MoM.png">
+        <img src="MoM.png" alt="MoM pic" width="420" height="290">
+      </a>
+    <div class="desc">Snippet of scorecard when I got MoM</div>
+    </div>
+    <div class="galleryimg">
+      <a target="_blank" href="csk logo.jpg">
+        <img src="csk logo.jpg" alt="CSK logo" width="420" height="290">
+      </a>
+    <div class="desc">My favorite IPL team, CSK</div>
+    </div>
+    <div class="galleryimg">
+      <a target="_blank" href="biryani.jpg">
+        <img src="biryani.jpg" alt="Biryani Pic" width="420" height="290">
+      </a>
+    <div class="desc">Biryani is one of my most favorite foods</div>
+    </div>
+</div>
+
+<div class="contact" id="contactSection">
+  <h2>Contact Me:</h2>
+  <hr style="width:200px" class="w3-opacity">
+  <form action="/action_page.php" target="_blank">
+      <p><input type="text" placeholder="Email" required name="Email"></p>
+      <p><input type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input type="text" placeholder="Message" required name="Message"></p>
+      <p>
+          <button class="w3-button w3-light-black w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+      </p>
+  </form>
+  <!-- End Contact Section -->
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+    
+  var navbar = document.getElementById("navbarId");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+</body>
+</html>
